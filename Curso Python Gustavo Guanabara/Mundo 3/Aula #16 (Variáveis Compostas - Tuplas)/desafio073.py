@@ -7,5 +7,4 @@ tabela = ('Corinthians', 'Palmeiras', 'Santos', 'Grêmio', 'Cruzeiro', 'Flamengo
 print(f'Os 5 primeiros colocados são: {tabela[0:5]}')
 print(f'Os ultimos 4 colocados são: {tabela[-4:]}')
 print(f'Times em ordem alfabética: {sorted(tabela)}')
-position = tabela.index('Chapecoense')
-print(f'O time da Chapecoense está na {position+1}ª posição')
+print(f'O time da Chapecoense está na {tabela.index('Chapecoense')+1}ª posição')
