@@ -5,8 +5,8 @@
 from random import randint
 
 # variáveis globais
-menor = 0
-maior = 0
+#menor = 0
+#maior = 0
 
 # tupla:
 listagem = (randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10))
@@ -14,11 +14,11 @@ listagem = (randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10), rand
 # mostrando tupla
 for i in listagem:
     print(i, end = ' ')
-    if i > maior:
-        maior = i
-    if i < menor or menor == 0:
-        menor = i
+#    if i > maior:
+#        maior = i
+#    if i < menor or menor == 0:
+#        menor = i
 
 # mostrando maior e menor
-print(f'\nO maior valor sorteado foi {maior}')
-print(f'O menor valor sorteado foi {menor}')
+print(f'\nO maior valor sorteado foi {max(listagem)}')
+print(f'O menor valor sorteado foi {min(listagem)}')
