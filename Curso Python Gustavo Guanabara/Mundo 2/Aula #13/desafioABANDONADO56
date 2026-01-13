@@ -1,0 +1,29 @@
+# Desenvolva um programa que leie o nome, idade e sexo de 4 pessoas. No final do programa, mostre:
+# A média de idade do grupo.
+# Qual é o nome do homem mais velho.
+# Quantas mulheres tem menos de 20 anos.
+
+# lista:
+listaNome = []
+listaIdade = []
+listaSexo = []
+
+# lendo:
+for p in range(1, 5):
+    print(f'----- {p}ª PESSOA -----')
+    nome = str(input('Nome: '))
+    idade = int(input('Idade: '))
+    sexo = str(input('Sexo [M/F]: '))
+    listaNome.append(nome)
+    listaIdade.append(idade)
+    listaSexo.append(sexo)
+
+# calculando:
+for i in range(0, 3):
+    media = listaIdade[i] + listaIdade[i + 1]
+
+
+# respondendo:
+print(f'\nA média de idade do grupo é de {} anos.')
+print(f'O homem mais velho tem {} anos e se chama {}.')
+print(f'Ao todo são {} mulheres com menos de 20 anos.')

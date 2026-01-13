@@ -1,0 +1,123 @@
+🔤 Básico
+
+len(s) → tamanho
+
+s[i] / s[-1] → acesso por índice
+
+s[a:b:c] → fatiamento
+
+s1 + s2 → concatenação
+
+s * n → repetição
+
+"a" in s → verificação
+
+🔄 Maiúsculas / Minúsculas
+
+s.lower()
+
+s.upper()
+
+s.capitalize()
+
+s.title()
+
+s.swapcase()
+
+✂️ Remoção de espaços/caracteres
+
+s.strip()
+
+s.lstrip()
+
+s.rstrip()
+
+s.removeprefix()
+
+s.removesuffix()
+
+🔍 Busca e verificação
+
+s.find()
+
+s.rfind()
+
+s.index()
+
+s.count()
+
+s.startswith()
+
+s.endswith()
+
+🔁 Substituição
+
+s.replace("a", "b")
+
+📐 Alinhamento e preenchimento
+
+s.center(n)
+
+s.ljust(n)
+
+s.rjust(n)
+
+s.zfill(n)
+
+🧩 Quebra e junção
+
+s.split()
+
+s.splitlines()
+
+"sep".join(lista)
+
+🧠 Testes lógicos
+
+s.isalpha()
+
+s.isnumeric()
+
+s.isdigit()
+
+s.isalnum()
+
+s.islower()
+
+s.isupper()
+
+s.isspace()
+
+s.istitle()
+
+🧵 Formatação
+
+f"{var}" (f-string)
+
+"{}".format()
+
+"%s" % var
+
+🔐 Codificação
+
+s.encode()
+
+bytes.decode()
+
+🔃 Conversões
+
+str()
+
+list(s)
+
+tuple(s)
+
+🔬 Caracteres especiais
+
+ord("a") → código
+
+chr(97) → caractere
+
+⚠️ Importante
+
+Strings são imutáveis (não mudam diretamente)
