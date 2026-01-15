@@ -2,24 +2,22 @@
 
 # programa:
 expressao = []
-aberto = False
-fechado = False
-abertos = 0
-fechados = 0
+valida = True
+aberto = 0
 expressao.append(str(input('Digite a expressão: ')))
 for l in expressao:
-    if l == '(':
-        abertos += 1
-        aberto = True
-        fechado = False
+    if aberto < 0:
+        valida = False
+        break
+    elif l == '(':
+        aberto += 1
     elif l == ')':
-        if aberto == True:
-            fechados += 1
-            fechado = True
-            aberto = False
-        else:
-            fechado = False
-if aberto == False and fechado == True and abertos == fechados:
+        aberto -= 1
+if aberto == 0:
+    valida = True
+else:
+    valida = False
+if valida:
     print('Sua expressão está válida!')
 else:
     print('Sua expressão está errada!')
