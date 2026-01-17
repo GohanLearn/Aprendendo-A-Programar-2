@@ -23,7 +23,7 @@ for s in range(0, jogos):
     palpites.sort()
     jogadas.append(palpites[:])
     palpites.clear()
-for j in jogadas:
+for i, j in enumerate(jogadas, start = 1):
     sleep(1)
-    print(f'Jogo {jogadas.index(j)+1}: {j}')
+    print(f'Jogo {i}: {j}')
 print('-=-=-=-=-=- BOA SORTE! -=-=-=-=-=-')
