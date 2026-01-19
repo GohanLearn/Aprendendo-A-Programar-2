@@ -6,11 +6,9 @@
 # programa:
 grupo = list()
 pessoas = list()
-totpessoa = 0
 maiorN = list()
-maior = 0
 menorN = list()
-menor = 0
+menor = totpessoa = maior = 0
 while True:
     pessoas.clear()
     totpessoa += 1
