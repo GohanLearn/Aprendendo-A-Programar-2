@@ -13,10 +13,16 @@ sumIdades = 0
 while True:
     individuo['nome'] = str(input('Nome: '))
     individuo['sexo'] = str(input('Sexo: [M/F] ')).strip()[0]
+    while not individuo['sexo'] in 'MmFf':
+        print('ERRO! Por favor, digite apenas M ou F.')
+        individuo['sexo'] = str(input('Sexo: [M/F] ')).strip()[0]
     individuo['idade'] = int(input('Idade: '))
     sumIdades += individuo['idade']
     pessoas.append(individuo.copy())
     escolha = str(input('Quer continuar? [S/N] ')).strip()[0]
+    while not escolha in 'NnSs':
+        print('ERRO! Responda apenas S ou N.')
+        escolha = str(input('Quer continuar? [S/N] ')).strip()[0]
     if escolha in 'Nn':
         break
 media = sumIdades / len(pessoas)
