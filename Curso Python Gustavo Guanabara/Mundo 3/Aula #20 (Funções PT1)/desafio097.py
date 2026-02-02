@@ -8,14 +8,11 @@
 
 # funções:
 def escreva(txt):
-    for l in txt:
-        print('-', end='')
-    print()
-    print(txt)
-    for l in txt:
-        print('-', end='')
-    print()
+    tam = len(txt) + 4
+    print('~' * tam)
+    print(f' {txt} ')
+    print('~' * tam)
 
 # programa principal:
-escreva(' Curso em Video ')
+escreva('Curso em Video')
 escreva('Gustavo')
