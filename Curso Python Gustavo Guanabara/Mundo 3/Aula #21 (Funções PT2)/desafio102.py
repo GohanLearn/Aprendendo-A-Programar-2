@@ -9,17 +9,17 @@ def fatorial(n=1, show=False):
     :param show: (opcional) Mostrar ou não a conta.
     :return: O valor fo Fatorial de um número n.
     """
-    f = 0
-    for c in range(n, f, -1):
+    f = 1
+    for c in range(n, 0, -1):
         if show:
-            if c != n:
-                print(f'x {c} ', end = '')
+            print(c, end='')
+            if c > 1:
+                print(' x ', end = '')
             else:
-                print(f'{c} ', end = '')
+                print(f' = ', end = '')
         f *= c
-    print('= ', end = '')
     return f
 
 
 # programa principal:
-print(fatorial(5, show=False))
+print(fatorial(5, show=True))

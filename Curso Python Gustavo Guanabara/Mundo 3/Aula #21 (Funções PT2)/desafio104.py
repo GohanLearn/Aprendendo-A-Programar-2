@@ -9,6 +9,7 @@ def leiaInt(digit):
     while True:
         num = str(input(f'{digit}'))
         if num.isnumeric():
+            num = int(num)
             return num
         else:
             print('\033[31;1mERRO! Digite um número inteiro válido.\033[m')

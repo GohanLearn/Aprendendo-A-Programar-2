@@ -21,6 +21,7 @@ def enfeite(txt, cor):
     print(f' {txt} ')
     print('~'*tam, f'{cores['limpa']}')
 
+
 # programa principal:
 while True:
     enfeite('SISTEMA DE AJUDA PyHELP', cores['green'])

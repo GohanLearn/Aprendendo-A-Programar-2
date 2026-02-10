@@ -20,16 +20,9 @@ def notas(* nota, sit=False):
     """
     ficha = dict()
     ficha['total'] = len(nota)
-    ficha['maior'] = 0
-    ficha['menor'] = 0
-    ficha['média'] = 0
-    for e,  i in enumerate(nota):
-        if i > ficha['maior']:
-            ficha['maior'] = i
-        if i < ficha['menor'] or e == 0:
-            ficha['menor'] = i
-        ficha['média'] += i
-    ficha['média'] = ficha['média'] / ficha['total']
+    ficha['maior'] = max(nota)
+    ficha['menor'] = min(nota)
+    ficha['média'] = sum(nota)/len(nota)
     if sit:
         if ficha['média'] >= 7:
             ficha['situação'] = 'BOA'

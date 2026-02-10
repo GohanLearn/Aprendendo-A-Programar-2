@@ -8,16 +8,16 @@ from datetime import date
 def voto(nasc):
     if nasc >= 18:
         if nasc > 65:
-            return 'OPCIONAL'
+            return f'Com {nasc} anos: VOTO OPCIONAL'
         else:
-            return 'OBRIGATÓRIO'
+            return f'Com {nasc} anos: VOTO OBRIGATÓRIO'
     elif nasc < 16:
-        return 'NEGADO'
+        return f'Com {nasc} anos: NÃO VOTA'
     else:
-        return 'OPCIONAL'
+        return f'Com {nasc} anos: VOTO OPCIONAL'
 
 
 # programa principal:
 print('--'*20)
 data = date.today().year - int(input('Em que ano você nasceu? '))
-print(f'Com {data} anos: VOTO {voto(data)}.')
+print(voto(data))
